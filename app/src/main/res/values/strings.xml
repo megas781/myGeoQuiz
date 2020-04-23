@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">GeoQuiz</string>
+    <string name="action_settings">Settings</string>
+    <string name="statement_1">Нью-Йорк – столица США</string>
+    <string name="statement_4">В воздухе 28% кислорода</string>
+    <string name="statement_2">Катя не умеет петь</string>
+    <string name="statement_3">Жизнь трудна</string>
+    
+    <string name="true_button">Правда</string>
+    <string name="false_button">Неправда</string>
+    
+    <string name="correct_toast">Верно!</string>
+    <string name="incorrect_toast">Неверно!</string>
+    
+    <string name="next_button_label">Далее</string>
+    <string name="prev_button_label">Назад</string>
+    <string name="additional_settings_button">Дополнительные настройки</string>
+    
+    <string name="warning_text_label">Вы действительно хотите узнать правильный ответ?</string>
+    <string name="show_answer_button_label">Показать ответ</string>
+    <string name="cheat_button_label">Обмануть</string>
+    <string name="judgement_toast_text">Обманывать нехорошо!</string>
+    
+    <string name="hint_count_text_view_label">Осталось подсказок</string>
+    <string name="you_used_all_hints_label">К сожалению, вы использовали все возможные подскаки</string>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_gravity="center"
+		android:gravity="center"
+		android:orientation="vertical">
+		
+		<TextView
+			android:id="@+id/statement_text_view_id"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="24dp"
+			android:textAlignment="center"
+			android:textSize="24sp" />
+		
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			
+			<Button
+				android:id="@+id/true_button_id"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:onClick="onTrueButtonTapped"
+				android:text="@string/true_button" />
+			
+			<Button
+				android:id="@+id/false_button_id"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:onClick="onFalseButtonTapped"
+				android:text="@string/false_button" />
+		</LinearLayout>
+		
+		<Button
+			android:id="@+id/cheat_button_id"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:onClick="onCheatButtonTapped"
+			android:text="@string/cheat_button_label" />
+		
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:orientation="horizontal">
+			
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:drawableStart="@drawable/arrow_left"
+				android:drawablePadding="4dp"
+				android:enabled="false"
+				android:onClick="onPrevButtonTapped"
+				android:text="@string/prev_button_label" />
+			
+			<Button
+				android:id="@+id/next_button_id"
+				android:layout_width="wrap_content"
+				android:layout_height="46dp"
+				android:drawableEnd="@drawable/arrow_right"
+				android:drawablePadding="4dp"
+				android:onClick="onNextButtonTapped"
+				android:text="@string/next_button_label" />
+		
+		</LinearLayout>
+		
+		<!--	<LinearLayout-->
+		<!--		android:layout_width="wrap_content"-->
+		<!--		android:layout_height="wrap_content">-->
+		<!--		-->
+		<!--		<ImageButton-->
+		<!--			android:layout_width="wrap_content"-->
+		<!--			android:layout_height="wrap_content"-->
+		<!--			android:src="@drawable/arrow_left"-->
+		<!--			android:padding="14dp"-->
+		<!--			android:onClick="prevButtonTapped"-->
+		<!--			android:contentDescription="@string/prev_button_label" />-->
+		<!--		<ImageButton-->
+		<!--			android:layout_width="wrap_content"-->
+		<!--			android:layout_height="wrap_content"-->
+		<!--			android:src="@drawable/arrow_right"-->
+		<!--			android:padding="14dp"-->
+		<!--			android:onClick="nextButtonTapped"-->
+		<!--			android:contentDescription="@string/next_button_label"-->
+		<!--			/>-->
+		<!--	</LinearLayout>-->
+	
+	</LinearLayout>
+	
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		tools:text="Android v.21.3.56"
+		android:layout_gravity="bottom|center_horizontal"
+		android:textAlignment="center"
+		android:padding="16dp"
+		android:id="@+id/api_level_text_view_id"/>
+</FrameLayout>

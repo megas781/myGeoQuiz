@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools">
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:gravity="center"
+		android:orientation="vertical">
+		
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/warning_text_label"
+			android:textSize="24sp"
+			android:textAlignment="center"
+			android:layout_marginHorizontal="24dp"
+			android:id="@+id/info_text_view_id"/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			tools:text="Hello there"
+			android:layout_margin="20dp"
+			android:textSize="30sp"
+			android:textAlignment="center"
+			android:visibility="invisible"
+			android:id="@+id/answer_text_view_id"
+			/>
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/show_answer_button_id"
+			android:text="@string/show_answer_button_label"
+			android:onClick="showAnswerButtonTapped"
+			/>
+	</LinearLayout>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		tools:text="Осталось подсказок: 3"
+		android:layout_gravity="bottom|center_horizontal"
+		android:padding="16dp"
+		android:id="@+id/hint_count_text_view_id"/>
+</FrameLayout>
+
